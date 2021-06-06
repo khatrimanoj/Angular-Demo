@@ -1,0 +1,675 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3" *ngIf="currentRouter=='/home'">
+      <div class="bg-white p-4 border-end h-100">
+        <div class="fs-14 d-flex">
+          <img class="img-fluid me-2" src="assets/images/EL.png"><span class="fs-14 black pt-2">Welcome
+            Back,<br>
+            Elisa</span>
+        </div>
+        <hr>
+        <div class="bg-theme p-3 mb-4 rounded">
+          <div class="progress mb-3">
+            <div class="progress-bar btn-primary" role="progressbar" style="width: 80%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <span>Profile Completeness: <b>80% </b></span>
+          <div class="d-grid mt-3">
+            <button type="button" class="btn btn-primary">Boost Your Profile</button>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13 text-primary" for="weekly">Weekly Newsletter</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="weekly" checked>
+          </div>
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13" for="daily">Daily Job Alerts</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="daily">
+          </div>
+        </div>
+        <h2 class="fs-6 fw-bold">
+          <img class="me-2" src="assets/images/Profileinformation.svg" alt="Your Profile" />Your Profile
+        </h2>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3">
+            <span class="text-muted">Current Role</span>
+            Product Manager
+          </li>
+          <li class="d-flex justify-content-between align-items-center my-3">
+            <span class="text-muted">Experience</span>
+            5 Years
+          </li>
+          <li class="d-flex justify-content-between align-items-center my-3">
+            <span class="text-muted">5 Years</span>
+            London
+          </li>
+        </ul>
+        <hr class="my-4">
+        <h2 class="fs-6 fw-bold">
+          <img class="me-2" src="assets/images/Preferences.svg" alt="Your Preferences" />
+          Your Preferences
+        </h2>
+        <h4 class="text-black fs-14 fw-bold my-3">Total compensation</h4>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3">
+            <span class="text-muted">Minimum</span>
+            £30,000
+          </li>
+          <li class="d-flex justify-content-between align-items-center my-3">
+            <span class="text-muted">Maximum</span>
+            £50,000
+          </li>
+        </ul>
+        <hr class="my-4">
+        <h2 class="fs-6 fw-bold">
+          Location
+        </h2>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex flex-column my-3">
+            London, UK
+            <span class="text-muted">I have permanent working eligibility</span>
+          </li>
+          <li class="d-flex flex-column my-3">
+            France
+            <span class="text-muted">I have sponsorship but will need it transfered</span>
+          </li>
+        </ul>
+        <button class="btn btn-light w-100 fs-14 text-primary">More Preferences</button>
+        <hr class="my-4">
+        <div class="bg-white mb-4 border rounded">
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13 text-primary" for="full-time">Full Time</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="full-time" checked>
+          </div>
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13" for="freelance">Freelance</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="freelance">
+          </div>
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13" for="advisory">Pro Bono/Advisory</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="advisory">
+          </div>
+        </div>
+        <div class="bg-white p-3 mb-4 border rounded">
+          <h4 class="text-black fs-14 fw-bold mb-3">Job search status</h4>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="job-search-status" id="option1" value="option1"
+              checked>
+            <label class="form-check-label fs-13" for="option1">
+              Actively Looking
+            </label>
+          </div>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="job-search-status" id="option2" value="option2">
+            <label class="form-check-label fs-13" for="option2">
+              Open but not Actively Looking
+            </label>
+          </div>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="job-search-status" id="option3" value="option3">
+            <label class="form-check-label fs-13" for="option3">
+              Not Looking
+            </label>
+          </div>
+        </div>
+        <div class="bg-white p-3 mb-4 border rounded">
+          <h4 class="text-black fs-14 fw-bold mb-3">Profile visibility</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="full-profile" value="Full profile"
+              checked>
+            <label class="form-check-label fs-13" for="full-profile">Full profile</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="anonymised-version"
+              value="Anonymised version">
+            <label class="form-check-label fs-13" for="anonymised-version">Anonymised version</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="not-visible" value="Not visible">
+            <label class="form-check-label fs-13" for="not-visible">Not visible</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3" *ngIf="currentRouter=='/jobs/all-jobs'">
+      <div class="bg-white p-4 border-end h-100">
+        <div class="fs-14 d-flex">
+          <img class="img-fluid me-2" src="assets/images/EL.png"><span class="fs-14 black pt-2">Welcome Back,<br>Elisa</span>
+        </div>
+        <hr>
+        <div class="bg-theme p-3 mb-4 rounded">
+          <div class="progress mb-3">
+            <div class="progress-bar btn-primary" role="progressbar" style="width: 80%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <span>Profile Completeness: <b>80% </b></span>
+          <div class="d-grid mt-3">
+            <button type="button" class="btn btn-primary">Boost Your Profile</button>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13 text-primary" for="weekly">Job Posted Since Last Login</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="weekly" checked>
+          </div>
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13" for="daily">Daily Job Alerts of matches</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="daily">
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13" for="weekly">Full Time</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="weekly" checked>
+          </div>
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13 text-primary" for="daily">Freelance</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="daily">
+          </div>
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13" for="weekly">Pro Bono/Advisory</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="weekly" checked>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#country">
+                  Country
+                </button>
+              </h2>
+              <div id="country" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">India (12)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">USA (13)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#city">
+                  City
+                </button>
+              </h2>
+              <div id="city" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">england</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">europe</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#visa-sponsorship">
+                  Visa sponsorship
+                </button>
+              </h2>
+              <div id="visa-sponsorship" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="job-search-status" id="option1" value="option1"
+                      checked="">
+                    <label class="form-check-label fs-13" for="option1">India (12)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="job-search-status" id="option1" value="option1"
+                      checked="">
+                    <label class="form-check-label fs-13" for="option1">USA (13)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="text-center d-block fs-14 text-primary fw-bolder">VIEW MORE (5)</span>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#language-required">
+                  Language required
+                </button>
+              </h2>
+              <div id="language-required" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">english</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">french</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#total-composition">
+                  Total composition
+                </button>
+              </h2>
+              <div id="total-composition" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="accordion accordion-flush">
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <span class="fs-13 text-muted">Minimum</span>
+                        <button class="accordion-button collapsed fs-14 p-2 fw-bolder bg-theme" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#language-required">
+                          $ 100
+                        </button>
+                      </h2>
+                      <div id="language-required" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <p>nbnbn</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <span class="fs-13 text-muted">Maximum</span>
+                        <button class="accordion-button collapsed fs-14 p-2 fw-bolder bg-theme" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#language-required">
+                          $ 100
+                        </button>
+                      </h2>
+                      <div id="language-required" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <p>nbnbn</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#day-rates">
+                  Day rates
+                </button>
+              </h2>
+              <div id="day-rates" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#equity-provided">
+                  equity provided
+                </button>
+              </h2>
+              <div id="equity-provided" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#insudtry-prefrences">
+                  Insudtry prefrences
+                </button>
+              </h2>
+              <div id="insudtry-prefrences" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#funcation-prefrences">
+                  Funcation prefrences
+                </button>
+              </h2>
+              <div id="funcation-prefrences" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#Seniority">
+                  Seniority
+                </button>
+              </h2>
+              <div id="Seniority" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#company-size">
+                  Company size
+                </button>
+              </h2>
+              <div id="company-size" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#funcation-experience">
+                  Funcation experience
+                </button>
+              </h2>
+              <div id="funcation-experience" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#industry-experience">
+                  Industry experience
+                </button>
+              </h2>
+              <div id="industry-experience" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#geography-experience">
+                  Geography experience
+                </button>
+              </h2>
+              <div id="geography-experience" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#consulting-experience">
+                  Consulting experience
+                </button>
+              </h2>
+              <div id="consulting-experience" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fs-14 fw-bolder shadow-none" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#skills">
+                  Skills
+                </button>
+              </h2>
+              <div id="skills" class="accordion-collapse collapse">
+                <div class="accordion-body fs-14">Content goes here...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3"  *ngIf="currentRouter=='/jobs/matched-jobs'">
+      <div class="bg-white p-4 border-end h-100">
+        <div class="fs-14 d-flex">
+          <img class="img-fluid me-2" src="assets/images/EL.png"><span class="fs-14 black pt-2">Welcome Back,<br>Elisa</span>
+        </div>
+        <hr>
+        <div class="bg-theme p-3 mb-4 rounded">
+          <div class="progress mb-3">
+            <div class="progress-bar btn-primary" role="progressbar" style="width: 80%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <span>Profile Completeness: <b>80% </b></span>
+          <div class="d-grid mt-3">
+            <button type="button" class="btn btn-primary">Boost Your Profile</button>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13 text-primary" for="weekly">Job Posted Since Last Login</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="weekly" checked>
+          </div>
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13" for="daily">Daily Job Alerts of matches</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="daily">
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="fs-6 fw-bold mb-0">
+            <img class="me-2" src="assets/images/Preferences.svg" alt="Your Preferences" />Your Preferences
+          </h2>
+          <button type="button" class="btn btn-outline px-2 py-1">
+            <img src="assets/images/Edit.svg" alt="Flag">
+          </button>
+        </div>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3">
+            <span class="text-muted">Job type</span>Permanent
+          </li>
+        </ul>
+        <hr class="my-4">
+        <h2 class="fs-6 fw-bold"> Location
+        </h2>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex flex-column my-3">London, UK
+            <span class="text-muted">I have permanent working eligibility</span>
+          </li>
+          <li class="d-flex flex-column my-3">France
+            <span class="text-muted">I have sponsorship but will need it transfered</span>
+          </li>
+        </ul>
+        <hr class="my-4">
+        <h2 class="fs-6 fw-bold">Total compensation
+        </h2>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3">
+            <span class="text-muted">Minimum </span>£30,000
+          </li>
+          <li class="d-flex justify-content-between align-items-center my-3">
+            <span class="text-muted">Maximum</span>£50,000
+          </li>
+        </ul>
+        <hr class="my-4">
+        <h2 class="fs-6 fw-bold">Industry preferences
+        </h2>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted"> Start up - early stage</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Start up - growth stage</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Retail</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">E-commerce</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">PE&VC</li>
+        </ul>
+        <hr class="my-4">
+        <h2 class="fs-6 fw-bold"> Function preferences</h2>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted"> Strategy</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Chief of staff</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Sales</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted"> Marketing</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Product management</li>
+        </ul>
+        <hr class="my-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="fs-6 fw-bold mb-0">
+            <img class="me-2" src="assets/images/Work2.svg" alt="Your Preferences" />
+            Your expereince
+          </h2>
+          <button type="button" class="btn btn-outline px-2 py-1">
+            <img src="assets/images/Edit.svg" alt="Flag">
+          </button>
+        </div>
+        <h3 class="fs-14 fw-bold">Seniority</h3>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">
+            3 Years of expereince
+          </li>
+        </ul>
+        <h3 class="fs-14 fw-bold">Consulting experience</h3>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">McKinsey</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Alumn</li>
+        </ul>
+        <h3 class="fs-14 fw-bold">Industry experience</h3>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Start up - early stage</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Retail</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">E-commerce</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">PE&VC</li>
+        </ul>
+        <h3 class="fs-14 fw-bold">Function preferences</h3>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Strategy</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted"> Chief of staff</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Chief of staff</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Marketing</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Product management</li>
+        </ul>
+        <h3 class="fs-14 fw-bold">Geography experience</h3>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">UK</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">France</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Germany</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Spain</li>
+        </ul>
+        <h3 class="fs-14 fw-bold">Skills</h3>
+        <ul class="m-0 p-0 fs-13">
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Due diligence</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Agile</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Market entry</li>
+          <li class="d-flex justify-content-between align-items-center my-3 text-muted">Six sigma</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3" *ngIf="currentRouter=='/jobs/saved-jobs'">
+      <div class="bg-white p-4 border-end h-100">
+        <div class="fs-14 d-flex">
+          <img class="img-fluid me-2" src="assets/images/EL.png"><span class="fs-14 black pt-2">Welcome
+            Back,<br>
+            Elisa</span>
+        </div>
+        <hr>
+        <div class="bg-theme p-3 mb-4 rounded">
+          <div class="progress mb-3">
+            <div class="progress-bar btn-primary" role="progressbar" style="width: 80%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <span>Profile Completeness: <b>80% </b></span>
+          <div class="d-grid mt-3">
+            <button type="button" class="btn btn-primary">Boost Your Profile</button>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="form-check form-switch p-0 m-2 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13 text-primary" for="weekly">Shortlisting tomorrow</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="weekly" checked>
+          </div>
+        </div>
+        <div class="bg-white mb-4 border rounded">
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13 text-primary" for="weekly">Weekly Newsletter</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="weekly" checked>
+          </div>
+          <div class="form-check form-switch p-0 m-3 d-flex justify-content-between align-items-center">
+            <label class="form-check-label fs-13" for="daily">Daily Job Alerts</label>
+            <input class="form-check-input float-none m-0" type="checkbox" id="daily">
+          </div>
+        </div>
+        <div class="bg-white p-3 mb-4 border rounded">
+          <h4 class="text-black fs-14 fw-bold mb-3">Job search status</h4>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="job-search-status" id="option1" value="option1"
+              checked>
+            <label class="form-check-label fs-13" for="option1">
+              Actively Looking
+            </label>
+          </div>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="job-search-status" id="option2" value="option2">
+            <label class="form-check-label fs-13" for="option2">
+              Open but not Actively Looking
+            </label>
+          </div>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="job-search-status" id="option3" value="option3">
+            <label class="form-check-label fs-13" for="option3">
+              Not Looking
+            </label>
+          </div>
+        </div>
+        <div class="bg-white p-3 mb-4 border rounded">
+          <h4 class="text-black fs-14 fw-bold mb-3">Profile visibility</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="full-profile" value="Full profile"
+              checked>
+            <label class="form-check-label fs-13" for="full-profile">Full profile</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="anonymised-version"
+              value="Anonymised version">
+            <label class="form-check-label fs-13" for="anonymised-version">Anonymised version</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="not-visible" value="Not visible">
+            <label class="form-check-label fs-13" for="not-visible">Not visible</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
